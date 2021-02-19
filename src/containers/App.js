@@ -1,10 +1,4 @@
 import React, { Component } from 'react';
-import twoMin from '../components/buttons/twoMin/twoMin';
-import fiveMin from '../components/buttons/fiveMin/fiveMin';
-import tenMin from '../components/buttons/tenMin/tenMin';
-import Timer from '../components/buttons/Timer/Timer';
-import Beach from '../components/buttons/Beach/Beach';
-import Rain from '../components/buttons/Rain/Rain';
 import './App.css';
 
 class App extends Component {
@@ -22,13 +16,13 @@ class App extends Component {
 
   render() {
     return(
-      <div>
-        <twoMin />
-        <fiveMin />
-        <tenMin />
-        <Timer />
-        <Beach />
-        <Rain />
+      <div className="app">
+        <div className="twoMinBtn"></div>
+        <div className="fiveMinBtn"></div>
+        <div className="tenMinBtn"></div>
+        <div className="timer"></div>
+        <div className="rain"></div>
+        <div className="beach"></div>
       </div>
     );
   }
